@@ -1,0 +1,33 @@
+Source: kamera
+Section: kde
+Priority: optional
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Norbert Preining <norbert@preining.info>,
+           Sune Vuorela <sune@debian.org>,
+Build-Depends: cmake (>= 3.16.0~),
+               debhelper-compat (= 13),
+               extra-cmake-modules,
+               libgphoto2-dev,
+               libkf5config-dev (>= 5.83.0~),
+               libkf5configwidgets-dev (>= 5.83.0~),
+               libkf5doctools-dev (>= 5.83.0~),
+               libkf5i18n-dev (>= 5.83.0~),
+               libkf5kio-dev (>= 5.83.0~),
+               libkf5xmlgui-dev (>= 5.83.0~),
+               pkg-kde-tools (>= 0.12),
+               qtbase5-dev (>= 5.15~),
+Standards-Version: 4.5.1
+Homepage: https://apps.kde.org/en/kamera
+Vcs-Browser: https://salsa.debian.org/qt-kde-team/kde/kamera
+Vcs-Git: https://salsa.debian.org/qt-kde-team/kde/kamera.git
+Rules-Requires-Root: no
+
+Package: kamera
+Architecture: any
+Section: graphics
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: digital camera support for KDE applications
+ This package allows any KDE application to access and manipulate pictures on
+ a digital camera.
+ .
+ This package is part of the KDE graphics module.
